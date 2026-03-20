@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap');
+html {
+  font-size: 14px;
+}
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  object-position: top;
+  height: 60vh;
+  overflow: hidden;
+}
+.old_price {
+  font-weight: bold;
+  color: red;
+}
+
+.new_price {
+  font-weight: bold;
+  background-color: green;
+  color: white !important;   /* 🔥 FORCE WHITE TEXT */
+  padding: 4px 10px;
+  border-radius: 6px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.product-img {
+  height: 250px;          /* fixed height */
+  width: 100%;
+  object-fit: contain;    /* keeps full image visible */
+  padding: 10px;
+  background-color: #fff;
+}
+
+.card {
+  height: 100%;
+}
+
+.card-body {
+  min-height: 120px;
+}
+/* 🔥 FIX CARD HEIGHT */
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card img {
+  height: 250px;
+  object-fit: contain;
+  width: 100%;
+}
+/* 🔥 FIX IMAGE */
+.product-img {
+  height: 220px;
+  width: 100%;
+  object-fit: contain;
+  padding: 10px;
+  background-color: #fff;
+}
+
+/* 🔥 FIX CONTENT AREA */
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.pic-box {
+  position: relative;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+footer {
+  position: relative;
+  width: 100%;
+}
